@@ -36,7 +36,7 @@
         "server": "localDns"
       },
       {
-        "rule_set": "geosite-cn",
+        "rule_set": ["geosite-cn","geosite-private"],
         "server": "localDns"
       },   
       {
@@ -52,7 +52,7 @@
         "server": "proxyDns"
       }
     ],
-    "final": "localDns",
+    "final": "proxyDns",
     "strategy": "ipv4_only"
   },
   "inbounds": [
@@ -321,7 +321,7 @@
         "outbound": "Global"
       },
       {
-        "rule_set": ["geoip-cn", "geosite-cn"],
+        "rule_set": ["geoip-cn", "geosite-cn","geosite-private"],
         "outbound": "China"
       }
     ],
@@ -409,6 +409,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-private",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
         "download_detour": "direct"
       },
       {
