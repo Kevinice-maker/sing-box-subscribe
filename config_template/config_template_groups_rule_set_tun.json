@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "info",
+    "level": "warn",
     "timestamp": true
   },
   "experimental": {
@@ -169,6 +169,7 @@
       ],
       "interrupt_exist_connections": false,
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
       "tolerance": 50
     },
     {
@@ -182,6 +183,7 @@
       ],
       "interrupt_exist_connections": false,
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
       "tolerance": 50
     },
     {
@@ -196,6 +198,7 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
       "tolerance": 50
     },
     {
@@ -209,6 +212,7 @@
       ],
       "interrupt_exist_connections": false,
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
       "tolerance": 50
     },
     {
@@ -222,6 +226,7 @@
       ],
       "interrupt_exist_connections": false,
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
       "tolerance": 50
     },
     {
@@ -235,6 +240,7 @@
       ],
       "interrupt_exist_connections": false,
       "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
       "tolerance": 50
     },
     {
