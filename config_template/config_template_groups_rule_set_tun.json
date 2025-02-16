@@ -113,7 +113,7 @@
         "America",
         "Others"
       ],
-      "default": "TaiWan"
+      "default": "Singapore"
     },
     {
       "tag":"Netflix",
@@ -122,7 +122,7 @@
         "TaiWan",
         "Singapore"
       ],
-      "default": "TaiWan"
+      "default": "Singapore"
     },
     {
       "tag":"Disney+",
@@ -148,7 +148,7 @@
         "Others",
         "direct"
       ],
-      "default": "TaiWan"
+      "default": "Singapore"
     },
     {
       "tag":"China",
@@ -160,63 +160,82 @@
     },
     {
       "tag":"HongKong",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
-      ]
+      ],
+      "interrupt_exist_connections": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50
     },
     {
       "tag":"TaiWan",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
-      ]
+      ],
+      "interrupt_exist_connections": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50
     },
     {
       "tag":"Singapore",
-      "type":"selector",
       "outbounds":[
         "{all}"
+        
       ],
       "filter":[
         {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
-      ]
+      ],
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50
     },
     {
       "tag":"Japan",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
-      ]
+      ],
+      "interrupt_exist_connections": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50
     },
     {
       "tag":"America",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
-      ]
+      ],
+      "interrupt_exist_connections": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50
     },
     {
       "tag":"Others",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
       "filter":[
         {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美"]}
-      ]
+      ],
+      "interrupt_exist_connections": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50
     },
     {
       "tag":"auto",
