@@ -300,6 +300,10 @@
         "outbound": "direct"
       },
       {
+        "port": [25, 465, 587, 143, 993, 110, 995],
+        "outbound": "direct"
+      },
+      {
         "ip_is_private": true,
         "outbound": "direct"
       },
